@@ -5,8 +5,8 @@ import Business from '../Business/Business';
 const BusinessList = (props) => {
   return (
     <div className="BusinessList">
-      {props.businesses.map((business, index) => {
-        return <Business key={index} business={business} />;
+      {props.businesses.map((business) => {
+        return <Business key={business.id} business={business} />;
       })}
     </div>
   );
